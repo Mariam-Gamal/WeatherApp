@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+
+      <div class="interface" id="interface">
+        <main class="banner">
+            
+          <div class="container">
+            <header>
+              <div class="location-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="location"></p>
+              </div>
+              <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search city..."
+                  id="searchBox"
+                  spellcheck="false"
+                  autocomplete="off"
+                />
+                <button id="submit">Find</button>
+              </div>
+            </header>   
+            <section class="forecast row">
+              <div class="forecast-data col-lg-9">
+                <h2>Weather</h2>
+                <div class="forecast-cards row"></div>
+              </div>
+              <div class="rain-chance col-lg-3">
+                <h3>Chance of rain</h3>
+                <div class="rain-day-hours">
+                  <div class="clock" data-clock="9">
+                    <div class="bar">
+                      <div class="percent"></div>
+                    </div>
+                    <p>9 Am</p>
+                  </div>
+                  <div class="clock" data-clock="11">
+                    <div class="bar">
+                      <div class="percent"></div>
+                    </div>
+                    <p>11 Am</p>
+                  </div>
+                  <div class="clock" data-clock="15">
+                    <div class="bar">
+                      <div class="percent"></div>
+                    </div>
+                    <p>3 PM</p>
+                  </div>
+                  <div class="clock" data-clock="19">
+                    <div class="bar">
+                      <div class="percent"></div>
+                    </div>
+                    <p>7 PM</p>
+                  </div>
+                  <div class="clock" data-clock="22">
+                    <div class="bar">
+                      <div class="percent"></div>
+                    </div>
+                    <p>10 PM</p>
+                  </div>
+               
+              </div>
+              </div>
+            </section>
+        </div>
+
+        
+
+      </main>
+      <section class="container p-3">
+        <div class="recent-cities row">
+          <div class="recent-header">
+            <h2>Recent Cities</h2>
+            <button id="delete">Clear All <i class="fa-solid fa-trash-can"></i></button>
+          </div>
+          <div class="city-items"></div>
+        </div>
+      </section>
+      </div>
+          
+          
+
+      <footer>
+        <div class="container text-center">
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+            <p class="mt-2 fs-6">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </footer>
+
+
+ 
+    
+
+
+
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.27/sweetalert2.all.min.js"
+      integrity="sha512-UfSxwRR8LlT3e4VLW1fx76+guLBWBALrK5mo7aJ92ZGiqGiR2Cu2AWgQ1FMLthwh2MbBVR0PqUCNiG6/QzsQNA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
